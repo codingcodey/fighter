@@ -1,0 +1,27 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="WUbw]aa_9=ZXLuSo+E)F">Player</variable><variable type="KIND_SpriteKind" id="@`(JaqtN1VoVbco]q`TE">Projectile</variable><variable type="KIND_SpriteKind" id="`^QTHG8,uk#GRCuW1M2c">Food</variable><variable type="KIND_SpriteKind" id="aP*H5(ei5`P+hxgFq!)U">Enemy</variable><variable id="$a.@[N@3-t{kqQM()VW9">mySprite</variable><variable id="A^1yZ=XlR5$h;ny51CLW">fighter</variable><variable id="=(+QVZZ.6i]*#|+xNI4L">bullet</variable></variables><block type="pxt-on-start" id="9Q^${?t!?3ZI_}HSmCwJ" x="10" y="-30"><statement name="HANDLER"><block type="variables_set" id="A?(L|Y-1nGLOQZBG-N]P"><field name="VAR" id="A^1yZ=XlR5$h;ny51CLW">fighter</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="YVE[s`q9Uj$CYhGdB{pC"><value name="img"><shadow type="screen_image_picker" id="kXxE*Tt8Fnxih;i@=@-u"><field name="img">img`
+. . . . . . . c d . . . . . . . 
+. . . . . . . c d . . . . . . . 
+. . . . . . . c d . . . . . . . 
+. . . . . . . c b . . . . . . . 
+. . . . . . . f f . . . . . . . 
+. . . . . . . c 2 . . . . . . . 
+. . . . . . . f f . . . . . . . 
+. . . . . . . e 2 . . . . . . . 
+. . . . . . e e 4 e . . . . . . 
+. . . . . . e 2 4 e . . . . . . 
+. . . . . c c c e e e . . . . . 
+. . . . e e 2 2 2 4 e e . . . . 
+. . c f f f c c e e f f e e . . 
+. c c c c e e 2 2 2 2 4 2 e e . 
+c c c c c c e e 2 2 2 4 2 2 e e 
+c c c c c c e e 2 2 2 2 4 2 e e 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="X?NfP]vS2}jNUz)_/)@z"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="nkj:E4_A/n/,4udD$RGl"><value name="sprite"><block type="variables_get" id=".w2.~nh3Aq?~mX/g9mKm"><field name="VAR" id="A^1yZ=XlR5$h;ny51CLW">fighter</field></block></value><value name="x"><shadow type="positionPicker" id="!2@V9BK1hNF7}McHn%,`"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker" id="51Yw@B=D[{|8z7~)UxzG"><field name="index">111</field></shadow></value><next><block type="game_control_sprite" id="/*`qH:UD0r*y%R~~/rC:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="+XYk%zS;tPaARYG:]X/D"><field name="VAR" id="A^1yZ=XlR5$h;ny51CLW">fighter</field></block></value><value name="vx"><shadow type="math_number" id="`+T+,ds]$+_n6@=01WC-"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="LgWVO#se!U}u@StG?_Ax"><field name="NUM">0</field></shadow></value><next><block type="particlesStartScreenAnimation" id="L$j8=UB=6rPM({Gs5m]r"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.blizzard</field></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="UE72-P=aARPkK~.qv:o," x="10" y="290"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id="$fzBXQV6@mB|~T*e.t$v"><field name="VAR" id="=(+QVZZ.6i]*#|+xNI4L">bullet</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="}HzLY(.v{6ZirPMt{P+D"><value name="img"><shadow type="screen_image_picker" id="MZ^sb0=/FvA4Qw^/EFXC"><field name="img">img`
+5 5 
+5 5 
+5 5 
+5 5 
+5 5 
+5 5 
+5 5 
+5 5 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="s8qanmMO?{vaS?OHM!hM"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="x_aLGzuhY$,dCtlElp;z"><value name="sprite"><block type="variables_get" id="g|kA=btH{H7lO?EZ-|y)"><field name="VAR" id="=(+QVZZ.6i]*#|+xNI4L">bullet</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="Sprite_blockCombine_get" id="6O`1$LO@A]Dl*3lQI(K0"><field name="property">Sprite.x</field><value name="mySprite"><block type="variables_get" id="8veT98p1fm;/{qlm|Vk$"><field name="VAR" id="A^1yZ=XlR5$h;ny51CLW">fighter</field></block></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="math_arithmetic" id="%I41tssf7d:sIwChF82~"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="eVAwZ,)UNEhnhwr)KOAV"><field name="property">Sprite.y</field><value name="mySprite"><block type="variables_get" id="}TN6C]#5+T]Ya/QK?;x5"><field name="VAR" id="A^1yZ=XlR5$h;ny51CLW">fighter</field></block></value></block></value><value name="B"><shadow type="math_number" id="F1oA~9zMiNiWiFBo-.,^"><field name="NUM">12</field></shadow></value></block></value><next><block type="spritesetvel" id="BzS3?!MjHqIiTjs.o4ma"><value name="sprite"><block type="variables_get" id="0l{{acPMY(~(:2pG,CGG"><field name="VAR" id="=(+QVZZ.6i]*#|+xNI4L">bullet</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="SvP(Z^WbbF0Tghya]Q}P"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="lOFH8E:34I=BcT0|*qK~"><field name="speed">-90</field></shadow></value></block></next></block></next></block></statement></block></xml>
